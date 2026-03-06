@@ -8,7 +8,7 @@ class SoftwareEngineer(metaclass=DevOps):
     """
 
     languages: List[str] = ["Python", "JS/TS", "PL/SQL"]  # but also language-agnostic
-    speaks: List[str] = ("English", "Estonian", "Russian")
+    speaks: List[str] = ["English", "Estonian", "Russian"]
     frameworks: List[str] = ["FastAPI", "Pyramid", "Angular", "Vue", "React"]
     os: List[str] = ["Debian", "Ubuntu", "NixOS", "Hyprland"]
     skills: List[str] = ["k8s", "docker", "linux", "ci/cd", "kafka", "rabbitmq",
