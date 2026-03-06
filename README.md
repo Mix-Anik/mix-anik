@@ -23,7 +23,7 @@ class SoftwareEngineer(metaclass=DevOps):
 
     @property
     def hobbies(self):
-        for hobby in ["Gaming", "Piano", "Table Tennis"]:
+        for hobby in ["Gaming", "Modding", "Piano", "Table Tennis"]:
             if now() == "3 am":
                 yield "Coding"
             
