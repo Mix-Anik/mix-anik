@@ -3,7 +3,8 @@ class SoftwareEngineer(metaclass=DevOps):
     """
     Software Engineer with 5+ years of experience in enterprise telecom environments.
     Specializes in both backend and frontend development including OPS batteries.
-    Passionate about getting to know anything i don't know and always open to new opportunities to learn, create, and improve.
+    Passionate about getting to know anything i don't know and
+        always open to new opportunities to learn, create, and improve.
     """
 
     languages: List[str] = ["Python", "JS/TS", "PL/SQL"]  # but also language-agnostic
