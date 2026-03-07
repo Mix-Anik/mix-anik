@@ -1,0 +1,33 @@
+name: Update GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run script
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: python github_stats.py
+
+      - name: Commit and push changes
+        run: |
+          git add README.md
+          git commit -m "chore: update github stats"
+          git push
