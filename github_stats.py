@@ -117,7 +117,7 @@ def get_commits_data() -> int:
 def compose_stats_table(lang_data, header_stats) -> str:
     lines = []
     lines.append("┌────────────────────────────────────┐")
-    lines.append(f"│       top{header_stats:>22}\u2009│")
+    lines.append(f"│       top{header_stats:>22}\u2009\u2009│")
     lines.append("├─────────────────┬──────────────────┤")
 
     for idx, (lang, sz, pct) in enumerate(lang_data, 1):
