@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 
 
 TOKEN = os.getenv("PAT_TOKEN")
-IDENT = 8
+IDENT = " " * 8
 
 if not TOKEN:
     raise ValueError("Set your GITHUB_TOKEN as environment variable")
