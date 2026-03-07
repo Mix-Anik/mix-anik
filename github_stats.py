@@ -117,7 +117,7 @@ def get_commits_data() -> int:
 def compose_stats_table(lang_data, header_stats) -> str:
     lines = []
     lines.append("┌────────────────────────────────────┐")
-    lines.append(f"│       top{header_stats:>22} │")
+    lines.append(f"│       top{header_stats:>22}│")
     lines.append("├─────────────────┬──────────────────┤")
 
     for idx, (lang, sz, pct) in enumerate(lang_data, 1):
@@ -137,7 +137,7 @@ owned_repos_data = get_repos_data(['OWNER'])
 total_repos = owned_repos_data['total_count']
 total_stars = owned_repos_data['total_stars']
 total_commits = get_commits_data()
-header_stats = f'{total_repos}📁 {total_stars}⭐ {total_commits}✏️'
+header_stats = f'{total_repos}📁 {total_stars}⭐ {total_commits}✏️\u2009'
 table_str = compose_stats_table(owned_repos_data['lang'], header_stats)
 
 with open('README.template', "r") as f:
