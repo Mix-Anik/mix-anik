@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 
 
 TOKEN = os.getenv("PAT_TOKEN")
+IDENT = 8
 
 if not TOKEN:
     raise ValueError("Set your GITHUB_TOKEN as environment variable")
@@ -130,7 +131,7 @@ def compose_stats_table(lang_data, header_stats) -> str:
         lines.append(f"│ #{idx:<2} {lang:<11} │ {pct_fmt:>5} ({sz_fmt:<8}) │")
 
     lines.append("└─────────────────┴──────────────────┘")
-    return "\n".join(lines)
+    return "\n".join([IDENT + l for l in lines])
 
 owned_repos_data = get_repos_data(['OWNER'])
 total_repos = owned_repos_data['total_count']
