@@ -32,18 +32,18 @@ class SoftwareEngineer(metaclass=DevOps):
     async def stats(self):
         return """
         ┌────────────────────────────────────┐
-        │      📊top       32📁 23⭐ 405✏️ │
+        │      📊top       33📁 23⭐ 462✏️ │
         ├─────────────────┬──────────────────┤
-        │ #1  TypeScript  │ 44.2% (297.5 KB) │
-        │ #2  Python      │ 29.1% (195.6 KB) │
-        │ #3  JavaScript  │  8.0% (53.5 KB ) │
+        │ #1  TypeScript  │ 43.7% (297.5 KB) │
+        │ #2  Python      │ 28.7% (195.6 KB) │
+        │ #3  JavaScript  │  7.9% (53.5 KB ) │
         │ #4  CSS         │  4.4% (29.7 KB ) │
         │ #5  Rust        │  3.9% (26.5 KB ) │
         │ #6  C#          │  3.4% (23.1 KB ) │
-        │ #7  C++         │  3.1% (20.6 KB ) │
-        │ #8  SourcePawn  │  1.5% (9.9 KB  ) │
+        │ #7  C++         │  3.0% (20.6 KB ) │
+        │ #8  SourcePawn  │  1.4% (9.9 KB  ) │
         │ #9  HTML        │  1.2% (8.2 KB  ) │
-        │ #10 Squirrel    │  1.2% (7.9 KB  ) │
+        │ #10 Shell       │  1.2% (8.0 KB  ) │
         └─────────────────┴──────────────────┘
         """
 
